@@ -1,0 +1,237 @@
+/*
+    general visual related comments 
+
+    1. very impressive bro, very similar to the original copy 
+    2. font styling - super! 
+
+    only 4 minor faults: 
+    1) learn ux/ui desi placeholder text missing 
+    2) image looks good, but could have been better 
+    3) paragraph (below left header) line height should be increased and padding top could be increased to create a gap between para and its heading
+    4) image should end right below groups link (check original) 
+  
+
+*/
+
+
+
+* {
+    margin: 0px; /* good */
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* good font selection */
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    border: 1px solid  rgb(46, 142, 233);
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(46, 142, 233);
+    position: relative;
+    border-bottom: none;
+    z-index: 3;
+}
+.nav {
+    //border: 1px solid black;
+    width: 85%;
+    height: 70px; /* super */
+    margin: 0px auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subnav1 {
+    //border: 1px solid black;
+    width: 35%;   /* super */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /*good*/
+}
+.subnav1 span { /* super, good usage of span element */
+    font-size: 30px;
+    font-weight: 800; /* good */
+    color: white;
+}
+.subnav2 {
+    //border: 1px solid black;
+    width: 65%;
+    height: 100%; /* super */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* good */
+}
+.subnav2 ul {
+    display: flex; /* flex ulla flex, super */
+}
+.subnav2 ul li {
+    list-style: none;
+}
+.subnav2 ul li a {
+    text-decoration: none;
+    margin: 20px; /* good */
+    font-size: 17px;
+    color: white;
+}
+
+/******* end of navbar styling --- etha indicate panna marathuratheenga */
+
+.color-box {
+    width: 750px; /* okay */
+    height: 540px;
+    background-color: rgb(74, 163, 247);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -4;
+    //border:10px solid red;
+}
+.humanimage { /* okay */
+    //border: 10px solid blue;
+    width: 650px;
+    height: 530px;
+    float: right;
+    margin-top: 10px;
+}
+    .humanimage img { /* good */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+.header-text {
+    //border: 10px solid black;
+    width: 85%;
+    height: 400px;
+    margin: 0px auto; /* super */
+    margin-top: 140px;
+}
+.header-text h1 {
+    font-size: 46px;
+    color: white;
+    z-index: -2;
+    letter-spacing: 2px; /* good */
+}
+    .header-text p {
+        font-size: 18px;
+        color: white;
+        letter-spacing: 1.2px; /* good */
+    }
+
+    
+.form { /* header text div ulla form div, konjam complexa na design ,super */
+    width: 550px;
+    height: 110px;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    //border:10px solid yellow;
+}
+.text {
+    width: 350px;
+    height: 50px;
+    z-index: 3;
+    border: none; /* super input kku border podala */
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 2px; /* font styling within input field super*/
+    /* input placholder vechirunthan, clear a field show aayurikku */
+}
+.text:focus {
+    border: 1px solid #ED2D34;
+}
+
+
+
+.textbox {
+    display: flex; /* okay */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    z-index: 5;
+}
+.alink { /* okay */
+    text-decoration: none;
+    background-color: rgb(46, 142, 233);
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+}
+.textbox label {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+/******************container styling over --- mark panna maraturatheenga *********************/
+.container1 {
+    //border: 10px solid black;
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(199, 221, 241);
+    display: flex; /* good */
+    align-items: center;
+    justify-content: center;
+}
+
+.color-box1 {
+    //border: 1px solid black;
+    width: 85%; /* okay */
+    height: 120px;
+    background-color: rgb(199, 221, 241);
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box1 {
+    //border: 1px solid black;
+    width: 28%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left {
+    font-size: 40px; /* good */
+    display: flex; 
+    align-items: center;    
+    justify-content: center;
+}
+.icon1 {
+    font-size: 40px; /*okay*/
+    padding: 14px;
+    background-color: rgb(46, 205, 233);
+    border-radius: 20px;
+}
+.icon2 {
+    font-size: 40px; /*okay*/
+    padding: 14px;
+    background-color: rgb(174, 37, 238);
+    border-radius: 20px;
+}
+.icon3 {
+    font-size: 40px; /*okay*/
+    padding: 14px;
+    background-color: rgb(21, 179, 74);
+    border-radius: 20px;
+}
+.right {
+    line-height: 35px;
+}
+.right h2 {
+    font-size: 20px;
+    letter-spacing: 1.5px; /*good*/
+}
+.right p {
+    font-size: 12px;/*good*/
+}
